@@ -1,5 +1,38 @@
+
+const playerSelection = 'rock'
+const computerSelection = getComputerChoice()
+console.log(playRound(playerSelection, computerSelection))
+
+const game = () => {
+  // for (let i = 0; i < 5; i++) {
+  //   const playerSelection = prompt(`Round ${i}. Enter your choice,`)
+  //   const computerSelection = getComputerChoice()
+  //   console.log(playRound(playerSelection, computerSelection))
+  // }
+
+
+}
+
+const rockBtn = document.getElementById("rock");
+const paperBtn = document.getElementById("paper");
+const scissorsBtn = document.getElementById("scissors");
+
+rockBtn.addEventListener("click", () => {
+  playRound("rock", computerSelection);
+  console.log("gaya")
+});
+
+paperBtn.addEventListener("click", () => {
+  playRound("paper", computerSelection);
+});
+
+scissorsBtn.addEventListener("click", () => {
+  playRound("scissors", computerSelection);
+});
+
+
+
 const getComputerChoice = () => {
-  //generating number b/w 0,1,2
   const randomNumber = Math.floor(Math.random() * 3)
   const returned =
     randomNumber === 0 ? 'rock' : randomNumber === 1 ? 'paper' : 'scissors'
@@ -26,14 +59,4 @@ const playRound = (playerSelection, computerSelection) => {
   }
 }
 
-const playerSelection = 'rock'
-const computerSelection = getComputerChoice()
-console.log(playRound(playerSelection, computerSelection))
 
-const game = () => {
-  for (let i = 0; i < 5; i++) {
-    const playerSelection = prompt(`Round ${i}. Enter your choice,`)
-    const computerSelection = getComputerChoice()
-    console.log(playRound(playerSelection, computerSelection))
-  }
-}
