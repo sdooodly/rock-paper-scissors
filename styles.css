@@ -1,0 +1,144 @@
+/* Style for the buttons */
+body{
+  background: url(./bg.avif);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+}
+
+.overlayContainer{
+  background: linear-gradient(0deg, #000000 30%, #00304ede 100%);
+  height: 100vh;
+}
+.content {
+  width: 100%;
+  max-width: 800px; 
+  margin: 0 auto; 
+  padding: 20px;
+  box-sizing: border-box;
+  text-align: justify;
+}
+
+@media (min-width: 768px) {
+  .content {
+    width: 75%;
+  }
+}
+
+@media (min-width: 992px) {
+  .content {
+    width: 50%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .content {
+    width: 33.33%;
+  }
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+
+.popup {
+  display: none;
+  background: linear-gradient(45deg, #00000090 30%, #091b2c 100%);
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 800px;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+.popup h2 {
+  margin-top: 0;
+}
+
+.popup p {
+  margin-bottom: 20px;
+}
+.popup button {
+  display: block;
+  margin-top: 20px;
+}
+
+.button-container{
+ 
+  display: flex;
+  justify-content: space-around ;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  max-width: 800px; /* optional - set a maximum width for the table */
+  margin: 0 auto; /* optional - center the table on the page */
+}
+
+th, td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: left;
+}
+
+
+
+footer,
+header {
+  background-color: rgba(0, 0, 0, 0.752);
+  width: 100%;
+  height: 50px;
+  display: flex;
+  padding: 0;
+  align-items: center;
+  margin: 0;
+}
+
+
+header {
+  justify-content: space-between;
+}
+footer {
+  justify-content: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%
+}
+
+.navi {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+.icon {
+  display: inline-block;
+  margin: 0 10px;
+  width: 20px;
+  height: 20px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+
+.linkedin-icon {
+  background-image: url("https://www.linkedin.com/favicon.ico");
+}
+
+
+.github-icon {
+  background-image: url("https://github.com/favicon.ico");
+}
+
+.gmail-icon {
+  background-image: url("https://ssl.gstatic.com/ui/v1/icons/mail/rfr/logo_gmail_lockup_dark_1x_r2.png");
+  background-size: cover;
+}
