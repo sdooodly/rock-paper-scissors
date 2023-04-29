@@ -23,7 +23,7 @@ const cct = document.getElementById("ccText");
 let ys = 0;
 let cs = 0;
 
-// Function to generate computer's move
+// To generate computer's move
 function getComputerChoice() {
   // To generate number b/w 0-2
   const randomNumber = Math.floor(Math.random() * 3);
@@ -32,7 +32,7 @@ function getComputerChoice() {
   return returned;
 }
 
-// Function to determine the winner of each round
+// To determine the winner of each round
 function playRound(playerSelection, computerSelection) {
   if (playerSelection.toLowerCase() === computerSelection) {
     return "It is a tie! Badamtush!";
