@@ -6,3 +6,8 @@ https://unsplash.com/photos/4ibyBpL6bBA?utm_source=unsplash&utm_medium=referral&
 29/04/2023
 To-Do
 Check file format
+
+03/5/2023
+Add logs feature
+Simplify UI
+Add padding for header
