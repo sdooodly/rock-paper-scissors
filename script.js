@@ -17,6 +17,7 @@ const paperButton = document.getElementById("paper");
 const scissorsButton = document.getElementById("scissors");
 const result = document.getElementById("result");
 const yourScore = document.getElementById("yourScoreCell");
+//const yourScore = document.getElementsByClassName("yourScoreCell");
 const computerScore = document.getElementById("computerScoreCell");
 const yct = document.getElementById("ycText");
 const cct = document.getElementById("ccText");
