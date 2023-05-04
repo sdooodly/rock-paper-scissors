@@ -43,13 +43,7 @@ body{
   }
 }
 
-button {
-  padding: 10px 20px;
-  font-size: 20px;
-  margin-right: 10px;
-  background-color: pink;
-  border-radius: 80%;
-}
+
 
 
 .popup {
@@ -164,3 +158,35 @@ footer {
   justify-content: center;
 } 
 */
+
+
+
+#rock{
+  background-image: url("./rock.png");
+}
+#paper{
+  background-image: url("./paper.png");
+}
+#scissors{
+  background-image: url("./scissors.png");
+}
+
+#rock , #paper, #scissors{
+
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100px;
+  height: 50px;
+  border: none;
+  color: #fff;
+  background-color: #007bff00;
+  cursor: pointer;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 20px;
+  margin-right: 10px;
+  /*background-color: pink;
+  border-radius: 80%;*/
+}
