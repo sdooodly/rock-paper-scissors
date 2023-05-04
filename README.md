@@ -12,14 +12,15 @@ To-Do
 Check file format
 
 03/5/2023 01
-Add logs feature
-Simplify UI
-Add padding for header
+-Add logs feature
+-Simplify UI
+-Add padding for header
 
 03/5/2023 02
-Add logs feature
-Simplify UI
+-Add logs feature
+-Simplify UI
 
 04/05/2023
--Change the images. Make 'em brighter.
--Make the result div better.
+-Change the images. Make 'em brighter. Make pngs.
+-Make the result div better
+-Add logs feature
