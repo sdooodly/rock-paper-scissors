@@ -19,3 +19,7 @@ Add padding for header
 03/5/2023 02
 Add logs feature
 Simplify UI
+
+04/05/2023
+-Change the images. Make 'em brighter.
+-Make the result div better.
