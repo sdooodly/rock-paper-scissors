@@ -190,3 +190,10 @@ button {
   /*background-color: pink;
   border-radius: 80%;*/
 }
+
+.options{
+  display: flex;
+  justify-content: center;
+  gap: 33px;
+  padding: 100px 10px;
+}
