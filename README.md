@@ -11,7 +11,7 @@ Use the command below to clone this repo!
 ```bash
 git clone https://github.com/sdooodly/rock-paper-scissors.git
 ```
-Toodles! (:
+Toodles! (':
 
 ## Credits
 - Background image: [Photo by Marko Blažević on Unsplash](https://unsplash.com/photos/4ibyBpL6bBA?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink)
@@ -46,3 +46,10 @@ Toodles! (:
 #### To-Do
 - Add logs feature
 - Scram, take a hike!
+
+
+### 08/05/2023
+#### Change log
+- Add boxes? Is this visually too much? Tone it down?
+- Scram, take a hike!
+
