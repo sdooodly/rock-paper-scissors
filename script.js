@@ -69,8 +69,8 @@ const handleButtonClick = (playerSelection) => {
     result.textContent = resultText;
     yourScore.textContent = ys;
     computerScore.textContent = cs;
-    document.getElementById("yourChoiceImg").src = `${playerSelection}.png`;
-    document.getElementById("computerChoiceImg").src = `${computerSelection}.png`;
+    document.getElementById("yourChoiceImg").src = `./images/${playerSelection}.png`;
+    document.getElementById("computerChoiceImg").src = `./images/${computerSelection}.png`;
 }
 
 rockButton.addEventListener("click", () => handleButtonClick("rock"));
