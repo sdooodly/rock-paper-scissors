@@ -4,7 +4,7 @@ A digital incarnation of the age-old battle of hand gestures.
 
 Live preview of rock-paper-scissors:
 [rock-paper-scissors](https://sdooodly.github.io/rock-paper-scissors/)
-![A screenshot of rock-paper-scissors]("./images/screenshot.png")
+![A screenshot of rock-paper-scissors](./images/screenshot.png)
 
 
 Use the command below to clone this repo! 
