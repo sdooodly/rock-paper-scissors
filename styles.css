@@ -7,7 +7,9 @@ body {
     height: 100vh;
     margin: 0;
     color: rgb(174, 194, 255);
+    font-family: 'Gambetta', serif;
 }
+
 
 .overlayContainer {
     background: linear-gradient(0deg, #000000 30%, #00304ede 100%);
@@ -17,7 +19,29 @@ body {
 
 }
 
+
+h1 {
+    font-size: 50px;
+    text-transform: uppercase;
+    letter-spacing: -3px;
+    transition: 700ms ease;
+    font-variation-settings: "wght"311;
+    margin-bottom: 0.8rem;
+    outline: none;
+    text-align: center;
+}
+
+h1:hover {
+    font-variation-settings: "wght"582;
+    letter-spacing: 1px;
+}
+
+
 .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     max-width: 800px;
     margin: 0 auto;
@@ -81,13 +105,14 @@ body {
     justify-content: space-around;
 }
 
+/* 
 table {
     border-collapse: collapse;
     width: 100%;
     max-width: 800px;
-    /* optional - set a maximum width for the table */
+   
     margin: 0 auto;
-    /* optional - center the table on the page */
+    
 }
 
 th,
@@ -97,7 +122,7 @@ td {
     text-align: left;
 }
 
-
+*/
 
 footer,
 header {
@@ -157,6 +182,7 @@ footer {
     display: flex;
     justify-content: space-around;
     text-align: center;
+    gap: 50px;
 }
 
 /*change
@@ -166,23 +192,6 @@ footer {
   justify-content: center;
 } 
 */
-
-
-
-#rock {
-    background-image: url("./rock.png");
-}
-
-#paper {
-    background-image: url("./paper.png");
-}
-
-#scissors {
-    background-image: url("./scissors.png");
-}
-
-
-
 .optionsIcon {
     background-repeat: no-repeat;
     background-size: contain;
@@ -206,5 +215,23 @@ button {
     display: flex;
     justify-content: center;
     gap: 33px;
-    padding: 100px 10px;
+    padding: 50px 10px;
+}
+
+.diamond {
+    margin: 25px 10px;
+    padding: 27px 0;
+    width: 140px;
+    background-color: transparent;
+    font-size: 22px;
+    text-shadow: 0 0 7px #98f8ff;
+    border: none;
+    border-radius: 0% 60% 0% 60%;
+    box-shadow: 0 0 10px #98f8ff, 0 0 10px #000000 inset;
+    transition: all 0.3s ease-in;
+}
+
+.diamond:hover {
+    font-variation-settings: "wght"582;
+    letter-spacing: 1px;
 }
