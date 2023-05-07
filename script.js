@@ -1,16 +1,17 @@
-window.onload = function() {
+window.onload = () => {
     document.getElementById("popup").style.display = "block";
 
     const yesBtn = document.getElementById("yesBtn");
-    yesBtn.onclick = function() {
+    yesBtn.onclick = () => {
         document.getElementById("popup").style.display = "none";
     };
 
     const noBtn = document.getElementById("noBtn");
-    noBtn.onclick = function() {
+    noBtn.onclick = () => {
         alert("Haha psych! Click 'Yes' please! (;");
     };
 };
+
 
 const rockButton = document.getElementById("rock");
 const paperButton = document.getElementById("paper");
