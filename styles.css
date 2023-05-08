@@ -1,14 +1,9 @@
-html,
-body,
-.overlayContainer {
-    height: 100%;
-}
-
 body {
     background: url(./images/bg.avif);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    height: 100vh;
     margin: 0;
     color: rgb(168, 255, 229);
     font-family: 'Gambetta', serif;
@@ -16,10 +11,89 @@ body {
 
 .overlayContainer {
     background: linear-gradient(0deg, #000000 30%, #00304ede 100%);
-    width: 100%;
+    height: 100vh;
+    color: rgb(168, 255, 229);
 }
 
-/*header and footer*/
+h1 {
+    font-size: 50px;
+    text-transform: uppercase;
+    letter-spacing: -3px;
+    transition: 700ms ease;
+    font-variation-settings: "wght"311;
+    margin-bottom: 0.8rem;
+    outline: none;
+    text-align: center;
+}
+
+h1:hover {
+    font-variation-settings: "wght"582;
+    letter-spacing: 1px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: justify;
+}
+
+@media (min-width: 768px) {
+    .content {
+        width: 75%;
+    }
+}
+
+@media (min-width: 992px) {
+    .content {
+        width: 50%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .content {
+        width: 33.33%;
+    }
+}
+
+.popup {
+    display: none;
+    background: linear-gradient(45deg, #00322fb3 30%, #002548 100%);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60%;
+    margin: 10px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    border: solid 3px black;
+}
+
+.popup h2 {
+    margin-top: 0;
+}
+
+.popup p {
+    margin-bottom: 20px;
+}
+
+.popup button {
+    display: block;
+    margin-top: 20px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-around;
+}
 
 footer,
 header {
@@ -27,21 +101,21 @@ header {
     width: 100%;
     height: 50px;
     display: flex;
-    padding: 0;
+    padding: 0 5px;
     align-items: center;
     margin: 0;
 }
 
 header {
-    justify-content: end
+    justify-content: space-between;
 }
 
 footer {
-    background-color: rgba(0, 0, 0, 0.952);
-    position: relative;
+    justify-content: center;
+    position: fixed;
     bottom: 0;
     left: 0;
-    justify-content: center;
+    width: 100%
 }
 
 .navi {
@@ -72,107 +146,18 @@ footer {
     background-size: cover;
 }
 
-/* h1 */
-h1 {
-    text-transform: uppercase;
-    transition: 700ms ease;
-    font-variation-settings: "wght"311;
-    margin-bottom: 0.8rem;
-    outline: none;
-    text-align: center;
-}
-
-h1:hover {
-    font-variation-settings: "wght"582;
-    letter-spacing: 1px;
-}
-
-.content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    margin: 0 auto;
-    padding: 10px;
-    box-sizing: border-box;
-    text-align: justify;
-}
-
-@media (max-width: 500px) {
-    .content {
-        width: 80%
-    }
-}
-
-@media (min-width: 768px) {
-    .content {
-        width: 75%;
-    }
-
-}
-
-@media (min-width: 992px) {
-    .content {
-        width: 50%;
-    }
-}
-
-@media (min-width: 1200px) {
-    .content {
-        width: 33.33%;
-    }
-}
-
-/*popup*/
-.popup {
-    display: none;
-    background: linear-gradient(45deg, #00322fb3 30%, #002548 100%);
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 60%;
-    margin: 10px;
-    padding: 20px;
-    background-color: #fff;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
-    border: solid 3px black;
-}
-
-.popup h2 {
-    margin-top: 0;
-}
-
-.popup p {
-    margin-bottom: 20px;
-}
-
-.popup button {
-    display: block;
-    margin-top: 20px;
-}
-
-
-.button-container {
-    display: flex;
-    justify-content: space-around;
-}
-
-
-
 .score {
     display: flex;
     justify-content: space-around;
     text-align: center;
-    gap: 10px;
+    gap: 50px;
 }
 
 .column {
     color: rgb(168, 255, 229);
-    margin: 10px;
-    padding: 0;
-    width: 150px;
+    margin: 25px 10px;
+    padding: 27px 0;
+    width: 200px;
     background-color: transparent;
     border: none;
     box-shadow: 0 0 10px #98f8ff, 0 0 10px #000000 inset;
@@ -182,9 +167,10 @@ h1:hover {
 .resultDiv {
     color: rgb(168, 255, 229);
     margin: 25px 10px;
-    padding: 0px;
-    width: 400px;
+    padding: 27px;
+    width: 450px;
     background-color: transparent;
+    border: none;
     box-shadow: 0 0 10px #98f8ff, 0 0 10px #000000 inset;
     transition: all 0.3s ease-in;
     text-align: center;
@@ -204,8 +190,7 @@ h1:hover {
 .options {
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
-    gap: 10px;
+    gap: 33px;
     padding: 50px 10px;
 }
 
@@ -215,7 +200,7 @@ h1:hover {
     padding: 27px 0;
     width: 140px;
     background-color: transparent;
-    font-size: 15px;
+    font-size: 22px;
     text-shadow: 0 0 7px #98f8ff;
     border: none;
     border-radius: 0% 60% 0% 60%;
