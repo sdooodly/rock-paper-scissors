@@ -1,3 +1,4 @@
+/* Default styles for all screen sizes */
 body {
     background: url(./images/bg.avif);
     background-size: cover;
@@ -7,15 +8,15 @@ body {
     margin: 0;
     color: rgb(168, 255, 229);
     font-family: 'Gambetta', serif;
-}
-
-.overlayContainer {
+    }
+    
+    .overlayContainer {
     background: linear-gradient(0deg, #000000 30%, #00304ede 100%);
     height: 100vh;
     color: rgb(168, 255, 229);
-}
-
-h1 {
+    }
+    
+    h1 {
     font-size: 50px;
     text-transform: uppercase;
     letter-spacing: -3px;
@@ -24,14 +25,14 @@ h1 {
     margin-bottom: 0.8rem;
     outline: none;
     text-align: center;
-}
-
-h1:hover {
+    }
+    
+    h1:hover {
     font-variation-settings: "wght"582;
     letter-spacing: 1px;
-}
-
-.content {
+    }
+    
+    .content {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -42,26 +43,98 @@ h1:hover {
     padding: 20px;
     box-sizing: border-box;
     text-align: justify;
-}
-
-@media (min-width: 768px) {
+    }
+    
+    .options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+    }
+    
+    .options button {
+    flex: 1;
+    margin: 0 5px;
+    }
+    
+    .score {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+    }
+    
+    .score .column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    }
+    
+    .score h2, .score h2#yourScoreCell, .score h2#computerScoreCell {
+    font-size: 30px;
+    margin: 0;
+    }
+    
+    .score p {
+    margin: 5px 0;
+    }
+    
+    .resultDiv {
+    margin-top: 20px;
+    text-align: center;
+    }
+    
+    .resultDiv #result {
+    font-size: 30px;
+    margin: 0;
+    }
+    
+    .button-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+    }
+    
+    .button-container button {
+    flex: 1;
+    margin: 0 5px;
+    font-size: 20px;
+    }
+    
+   /* Styles for smaller screens */
+@media (max-width: 767px) {
+    h1 {
+    font-size: 30px;
+    letter-spacing: -2px;
+    }
     .content {
-        width: 75%;
+    padding: 10px;
+    }
+    .options {
+    flex-direction: column;
+    }
+    .options button {
+    margin: 5px 0;
+    }
+    .score {
+    flex-direction: column;
+    }
+    .score .column {
+    margin: 10px 0;
+    }
+    .score h2, .score h2#yourScoreCell, .score h2#computerScoreCell {
+    font-size: 20px;
+    }
+    .resultDiv #result {
+    font-size: 20px;
     }
 }
-
-@media (min-width: 992px) {
-    .content {
-        width: 50%;
-    }
-}
-
-@media (min-width: 1200px) {
-    .content {
-        width: 33.33%;
-    }
-}
-
+    
+    
 .popup {
     display: none;
     background: linear-gradient(45deg, #00322fb3 30%, #002548 100%);
