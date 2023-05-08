@@ -52,4 +52,4 @@ Toodles! (':
 #### Change log
 - Add boxes? Is this visually too much? Tone it down?
 - Scram, take a hike!
-
+- Fix compatibility issues ASAP
