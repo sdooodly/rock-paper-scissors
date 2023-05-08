@@ -134,7 +134,7 @@ footer {
 
 .score {
     display: flex;
-    flex-wrap: wrap;
+
     justify-content: space-around;
     text-align: center;
     gap: 50px;
@@ -201,52 +201,12 @@ footer {
     letter-spacing: 1px;
 }
 
-@media (max-width: 480px) {
-    .logo {
-        display: none;
-    }
-
-    nav {
-        margin-top: 1rem;
-    }
-
-    .options {
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: space-between;
-        height: 12rem;
-    }
-
-
-    .score {
-        display: none;
-    }
-
-    .resultDiv {
-        margin-top: 2rem;
-    }
-}
 
 @media (min-width: 768px) {
     .content {
         width: 75%;
     }
 
-
-
-    .score {
-        display: flex;
-        margin-top: 2rem;
-    }
-
-    .column {
-        flex-basis: 50%;
-    }
-
-    .resultDiv {
-        margin-top: 3rem;
-    }
 }
 
 @media (min-width: 992px) {
