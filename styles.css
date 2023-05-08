@@ -3,13 +3,11 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    height: 100%;
+    height: 100vh;
     margin: 0;
     color: rgb(168, 255, 229);
     font-family: 'Gambetta', serif;
 }
-
-
 
 .overlayContainer {
     background: linear-gradient(0deg, #000000 30%, #00304ede 100%);
@@ -18,7 +16,7 @@ body {
 }
 
 h1 {
-    font-size: 3rem;
+    font-size: 50px;
     text-transform: uppercase;
     letter-spacing: -3px;
     transition: 700ms ease;
@@ -46,7 +44,23 @@ h1:hover {
     text-align: justify;
 }
 
+@media (min-width: 768px) {
+    .content {
+        width: 75%;
+    }
+}
 
+@media (min-width: 992px) {
+    .content {
+        width: 50%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .content {
+        width: 33.33%;
+    }
+}
 
 .popup {
     display: none;
@@ -134,7 +148,10 @@ footer {
 
 .score {
     display: flex;
+<<<<<<< HEAD
 
+=======
+>>>>>>> parent of c49754b (Check responsiveness)
     justify-content: space-around;
     text-align: center;
     gap: 50px;
@@ -176,7 +193,6 @@ footer {
 
 .options {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     gap: 33px;
     padding: 50px 10px;
@@ -199,6 +215,7 @@ footer {
 .diamond:hover {
     font-variation-settings: "wght"582;
     letter-spacing: 1px;
+<<<<<<< HEAD
 }
 
 
@@ -221,4 +238,6 @@ footer {
     .content {
         width: 33.33
     }
+=======
+>>>>>>> parent of c49754b (Check responsiveness)
 }
